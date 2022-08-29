@@ -17,11 +17,128 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500&display=swap');               
 
 
-/*VARIABLES*/
+/*ANIDACION*/
+nav {
+    ul {
+        list-style: none;
+            li {
+                display: inline-flex;
+                padding: 20px;
+                    a {
+                        text-decoration: none;
+                        font-size: 15px;
+                        font-family: 'Cinzel', serif;
+                        color: $gris-claro;
+                    }
+            }
+    }
+}
+
+main {
+    margin: 20px;
+        .is_justify_center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                .is_align_end {
+                    display: flex;
+                    align-items: flex-end;
+                }
+                .titulo {
+                    margin-top: 10%;
+                    margin-bottom: 1%;
+                    padding: 1%;
+                }
+                .contactate {
+                    padding: 1%;
+                }
+    }
+}
+
+
+footer {
+    margin: 8% 1% 1% 1%;
+    padding: 1%;
+        ul {
+            list-style: none;
+                li {
+                    display: inline-flex;
+                    padding: 15px;
+                        a { 
+                            font-size: 15px;
+                            font-family: 'Cinzel', serif;
+                            color: darkgray;
+                        }
+                }
+
+        }
+}
+
+
+/******* EXTEND TITULOS MAIN **************/
+.titulo-dir {
+    font-family: 'Cinzel', serif;
+    background-color:black;
+    font-size: 35px;
+    color: $rojo-oscuro;
+    text-align: center;
+    border-radius:20px;
+    border:1px solid $gris-claro;
+    margin: 90px; 
+    padding: 5px;
+}
+
+.titulo-pel {
+    @extend .titulo-dir;
+    background-color:rgb(112, 40, 112);
+    color:black
+}
+
+.titulo-mult {
+    @extend .titulo-dir;
+    background-color:rgb(131, 112, 61);
+    color:black
+}
+
+.titulo-cont {
+    @extend .titulo-dir;
+    background-color:rgb(76, 175, 159);
+    color:rgb(14, 13, 13)
+}
 
 
 
-/*ESTILOS*/
+/******MIXING****/
+@mixin dimension($anchito, $altito) {
+    width: $anchito;
+    height: $altito;  
 
+}
 
+/*mixing en peliculas*/
+.col {
+    @include dimension(700px, 900px)
+}
 
+/****** EACH - LISTAS ******/
+@each $secciones in body, main, footer {
+    /*bloque a repetir*/
+    #{$secciones} {
+        background-image: url(../imagenes/#{$secciones}.jpg);
+    }    
+}
+
+/****** MAPS *******/
+
+$colors: ( 
+    director: rgb(85, 25, 25),
+    peliculas: rgb(43, 43, 87), 
+    multimedia: rgb(54, 42, 19), 
+    contacto: rgb(35, 61, 63)
+    );
+
+@each $nombre, $value in $colors {
+    .color-#{$nombre} { 
+        background-color: $value; 
+        }
+}

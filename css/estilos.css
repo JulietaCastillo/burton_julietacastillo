@@ -15,32 +15,6 @@
     background-image: url(images/background-photo-mobile-devices.jpg);
   }
 }
-body {
-  width: 100%;
-  height: 100%;
-}
-body body.titulo {
-  margin-top: 10%;
-  margin-bottom: 1%;
-  padding: 1%;
-}
-body .contactate {
-  padding: 1%;
-}
-body footer {
-  margin: 8% 1% 1% 1%;
-  padding: 1%;
-}
-body .is_justify_center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body .is_align_end {
-  display: flex;
-  align-items: flex-end;
-}
-
 /*ANIMACIONES MAIN*/
 .is_frase {
   overflow: hidden;
@@ -82,16 +56,12 @@ body .is_align_end {
 }
 
 /*MAIN PELICULAS*/
-.titulo_pag {
-  margin-top: 2%;
-}
-
 .margin-carusel {
   margin: 2% 5% 2% 5%;
 }
 
-.margin-pelis {
-  margin: 3% 5% 3% 5%;
+.col {
+  margin-left: 9%;
 }
 
 .estilo-card-titulo {
@@ -108,7 +78,6 @@ body .is_align_end {
 }
 
 body {
-  background-image: url(../imagenes/fondo_bosque.JPG);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -117,16 +86,6 @@ body {
 }
 
 /*EG HEADER*/
-header .container .btn-menu label {
-  color: whitesmoke;
-}
-header .logo {
-  color: whitesmoke;
-}
-header .container .menu a:hover {
-  border-bottom: 2px solid #c7c7c7;
-}
-
 .titulo {
   color: whitesmoke;
   text-shadow: 2px 2px 2px rgba(53, 52, 52, 0.836);
@@ -138,10 +97,6 @@ header .container .menu a:hover {
 }
 
 /*MAIN PELICULAS*/
-.titulo_pag {
-  color: rgb(105, 8, 8);
-}
-
 .estilo-card-subtitulo {
   color: rgb(201, 174, 115);
 }
@@ -162,11 +117,7 @@ header .logo {
   font-size: 2rem;
 }
 
-/*MAIN PELICULAS*/
-.titulo_pag {
-  font-family: "Cinzel", serif;
-}
-
+/************* MAIN **************/
 .estilo-card-titulo {
   font-family: "Cinzel", serif;
 }
@@ -196,7 +147,125 @@ header .logo {
 }
 
 /*FUENTES*/
-/*VARIABLES*/
-/*ESTILOS*/
+/*ANIDACION*/
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-flex;
+  padding: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Cinzel", serif;
+  color: whitesmoke;
+}
+
+main {
+  margin: 20px;
+}
+main .is_justify_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .is_justify_center .is_align_end {
+  display: flex;
+  align-items: flex-end;
+}
+main .is_justify_center .titulo {
+  margin-top: 10%;
+  margin-bottom: 1%;
+  padding: 1%;
+}
+main .is_justify_center .contactate {
+  padding: 1%;
+}
+
+footer {
+  margin: 8% 1% 1% 1%;
+  padding: 1%;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  display: inline-flex;
+  padding: 15px;
+}
+footer ul li a {
+  font-size: 15px;
+  font-family: "Cinzel", serif;
+  color: darkgray;
+}
+
+/******* EXTEND TITULOS MAIN **************/
+.titulo-dir, .titulo-cont, .titulo-mult, .titulo-pel {
+  font-family: "Cinzel", serif;
+  background-color: black;
+  font-size: 35px;
+  color: rgb(170, 18, 18);
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid whitesmoke;
+  margin: 90px;
+  padding: 5px;
+}
+
+.titulo-pel {
+  background-color: rgb(112, 40, 112);
+  color: black;
+}
+
+.titulo-mult {
+  background-color: rgb(131, 112, 61);
+  color: black;
+}
+
+.titulo-cont {
+  background-color: rgb(76, 175, 159);
+  color: rgb(14, 13, 13);
+}
+
+/******MIXING****/
+/*mixing en peliculas*/
+.col {
+  width: 700px;
+  height: 900px;
+}
+
+/****** EACH - LISTAS ******/
+/*bloque a repetir*/
+body {
+  background-image: url(../imagenes/body.jpg);
+}
+
+/*bloque a repetir*/
+main {
+  background-image: url(../imagenes/main.jpg);
+}
+
+/*bloque a repetir*/
+footer {
+  background-image: url(../imagenes/footer.jpg);
+}
+
+/****** MAPS *******/
+.color-director {
+  background-color: rgb(85, 25, 25);
+}
+
+.color-peliculas {
+  background-color: rgb(43, 43, 87);
+}
+
+.color-multimedia {
+  background-color: rgb(54, 42, 19);
+}
+
+.color-contacto {
+  background-color: rgb(35, 61, 63);
+}
 
 /*# sourceMappingURL=estilos.css.map */

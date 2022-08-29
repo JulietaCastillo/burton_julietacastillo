@@ -1,28 +1,16 @@
 @use "variables.scss";
 
 body {
-    background-image: url(../imagenes/fondo_bosque.JPG); 
+    
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-color: #363638;
+
 }    
 
 /*EG HEADER*/
-
-header{
-    .container .btn-menu label{
-        color: $gris-claro;
-    }
-    .logo {
-        color: $gris-claro;
-    }
-    .container .menu a:hover{
-        border-bottom: 2px solid #c7c7c7;
-    }
-}
-
 .titulo {
     color: $gris-claro;
     text-shadow: 2px 2px 2px rgba(53, 52, 52, 0.836);
@@ -34,12 +22,6 @@ header{
   }
 
 /*MAIN PELICULAS*/
-
-.titulo_pag {
-    color: $rojo-oscuro;
-}
-
-
 
 .estilo-card-subtitulo{
     color: rgb(201, 174, 115);

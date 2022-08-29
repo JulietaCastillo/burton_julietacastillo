@@ -1,32 +1,4 @@
 
-
-body {
-    width: 100%;
-    height: 100%;
-
-    body.titulo {
-        margin-top: 10%;
-        margin-bottom: 1%;
-        padding: 1%;
-    }
-    .contactate {
-        padding: 1%;
-    }
-    footer {
-        margin: 8% 1% 1% 1%;
-        padding: 1%;
-    }
-    .is_justify_center {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .is_align_end {
-        display: flex;
-        align-items: flex-end;
-    }
-}
-
 /*ANIMACIONES MAIN*/
 .is_frase {
     overflow: hidden;
@@ -75,14 +47,12 @@ body {
 
 /*MAIN PELICULAS*/
 
-.titulo_pag {
-    margin-top: 2%;
-}
 .margin-carusel {
     margin: 2% 5% 2% 5%;
 }
-.margin-pelis {
-    margin: 3% 5% 3% 5%;
+
+.col {
+    margin-left: 9%;
 }
 .estilo-card-titulo{
     padding: 1%;
