@@ -78,67 +78,36 @@ footer {
 /******* EXTEND TITULOS MAIN **************/
 .titulo-dir {
     font-family: 'Cinzel', serif;
-    background-color:black;
+    background-color:rgba(0, 0, 0, 0.555);
     font-size: 35px;
     color: $rojo-oscuro;
     text-align: center;
-    border-radius:20px;
-    border:1px solid $gris-claro;
+    border-radius:1px;
+    border:1px solid rgb(48, 47, 47);
     margin: 90px; 
     padding: 5px;
 }
 
 .titulo-pel {
     @extend .titulo-dir;
-    background-color:rgb(112, 40, 112);
-    color:black
+    background-color:rgba(100, 93, 93, 0.5);
+    color:rgb(85, 7, 52)
 }
 
 .titulo-mult {
     @extend .titulo-dir;
-    background-color:rgb(131, 112, 61);
-    color:black
+    background-color:rgba(105, 101, 101, 0.5);
+    color:rgb(156, 98, 21)
 }
 
 .titulo-cont {
     @extend .titulo-dir;
-    background-color:rgb(76, 175, 159);
-    color:rgb(14, 13, 13)
+    background-color:rgba(105, 101, 101, 0.329);
+    color:rgb(31, 13, 126)
 }
 
 
 
-/******MIXING****/
-@mixin dimension($anchito, $altito) {
-    width: $anchito;
-    height: $altito;  
 
-}
 
-/*mixing en peliculas*/
-.col {
-    @include dimension(700px, 900px)
-}
 
-/****** EACH - LISTAS ******/
-@each $secciones in body, main, footer {
-    /*bloque a repetir*/
-    #{$secciones} {
-        background-image: url(../imagenes/#{$secciones}.jpg);
-    }    
-}
-
-/****** MAPS *******/
-
-$colors: ( 
-    director: rgb(85, 25, 25),
-    peliculas: rgb(43, 43, 87), 
-    multimedia: rgb(54, 42, 19), 
-    contacto: rgb(35, 61, 63)
-    );
-
-@each $nombre, $value in $colors {
-    .color-#{$nombre} { 
-        background-color: $value; 
-        }
-}

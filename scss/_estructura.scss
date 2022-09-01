@@ -1,8 +1,15 @@
 
+body {
+  background-image: url(../imagenes/bosque.jpg);
+}
+
 /*ANIMACIONES MAIN*/
+.bienvenida {
+  margin-top: 5%;
+}
 .is_frase {
+    padding-top: 5%;
     overflow: hidden;
-    font-family:'Inspiration';
     font-size: 5rem;
     text-align: center;
   }
@@ -51,9 +58,15 @@
     margin: 2% 5% 2% 5%;
 }
 
-.col {
-    margin-left: 9%;
+.pelis {
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 80%;
+  align-items: flex-start;
 }
+
+
 .estilo-card-titulo{
     padding: 1%;
 }
@@ -64,5 +77,25 @@
 /*MULTIMEDIA*/
 
 .margin-cards-mult {
-    margin: 2% 8% 2% 8%;
+    margin: 2% 10% 1% 10%;
+}
+
+.music {
+  margin: 5% 10% 1% 11%;
+  width: 90%;
+}
+
+.col {
+  margin-left: 9%;
+}
+
+
+/*CONTACTO*/
+
+.estilo_contacto {
+  margin: 5%;
+}
+
+.col-md-8 {
+  padding: 5% 3% 1% 3%;
 }

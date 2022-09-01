@@ -3,10 +3,10 @@
 
 
 header{
-    .logo {
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      .navbar-brand{
+        font-family: 'Cinzel', serif;
         font-weight: 400;
-        font-size: 25px;
+        font-size: 30px;
     }
 }
 
@@ -17,6 +17,15 @@ header{
 }
 
 /************* MAIN **************/
+
+/*INICIO*/
+
+.is_frase {
+    font-family:'Inspiration';
+  }
+
+
+/*PELICULAS*/
 
 .estilo-card-titulo{
     font-family: 'Cinzel', serif;
@@ -47,4 +56,10 @@ header{
 
 .estilo_footer {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.needs-validation {
+    padding: 1%;
+    font-family: 'Cinzel', serif;
 }
