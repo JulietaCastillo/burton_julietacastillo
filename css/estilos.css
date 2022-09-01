@@ -33,7 +33,9 @@ body {
 
 .frase {
   display: inline-block;
-  animation: smoky 3s 5s both;
+  animation: smoky both;
+  animation-duration: 2s;
+  animation-delay: 3s;
 }
 
 .frase:nth-child(even) {
@@ -258,12 +260,12 @@ footer ul li a {
 .titulo-dir, .titulo-cont, .titulo-mult, .titulo-pel {
   font-family: "Cinzel", serif;
   background-color: rgba(0, 0, 0, 0.555);
-  font-size: 35px;
+  font-size: 30px;
   color: rgb(170, 18, 18);
   text-align: center;
   border-radius: 1px;
   border: 1px solid rgb(48, 47, 47);
-  margin: 90px;
+  margin: 80px;
   padding: 5px;
 }
 

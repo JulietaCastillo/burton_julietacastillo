@@ -16,7 +16,9 @@ body {
   
   .frase {
     display: inline-block;
-    animation: smoky 3s 5s both;
+    animation: smoky both;
+    animation-duration: 2s;
+    animation-delay: 3s;
   }
   
   .frase:nth-child(even){
