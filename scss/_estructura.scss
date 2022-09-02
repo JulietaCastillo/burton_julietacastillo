@@ -68,7 +68,6 @@ body {
   align-items: flex-start;
 }
 
-
 .estilo-card-titulo{
     padding: 1%;
 }
@@ -76,7 +75,19 @@ body {
     padding: 2%;
 }
 
+.imdb {
+  text-align: left;
+  margin-left: 15px;
+}
+
+
 /*MULTIMEDIA*/
+
+.sub_mult {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+}
 
 .margin-cards-mult {
     margin: 2% 10% 1% 10%;

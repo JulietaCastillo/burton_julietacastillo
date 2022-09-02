@@ -86,7 +86,18 @@ body {
   padding: 2%;
 }
 
+.imdb {
+  text-align: left;
+  margin-left: 15px;
+}
+
 /*MULTIMEDIA*/
+.sub_mult {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+}
+
 .margin-cards-mult {
   margin: 2% 10% 1% 10%;
 }
@@ -141,6 +152,10 @@ body {
   color: #363638;
 }
 
+.imdb {
+  color: rgb(53, 51, 53);
+}
+
 /*CONTACTO*/
 .needs-validation {
   color: whitesmoke;
@@ -174,6 +189,10 @@ header .navbar-brand {
 }
 
 .estilo-card-pelis {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.imdb {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
