@@ -4,33 +4,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Inspiration&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/*Media*/
-@media only screen and (max-width: 200px) {
-  body {
-    background-image: url(images/background-photo-mobile-devices.jpg);
-  }
-}
-body {
+.fondo_index {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #363638;
+  height: auto;
   background-image: url(../imagenes/bosque.jpg);
 }
 
-/*ANIMACIONES MAIN*/
-.bienvenida {
-  margin-top: 5%;
+/*Estilos de Inicio*/
+.fondo_index {
+  background-image: url(../imagenes/bosque.jpg);
+}
+
+.titulo {
+  color: goldenrod;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgba(53, 52, 52, 0.836);
+  font-family: "Cinzel", serif;
+  margin-top: 18%;
+  margin-bottom: 5%;
 }
 
 .is_frase {
-  padding-top: 5%;
+  color: whitesmoke;
+  padding-top: 10%;
+  margin-bottom: 30%;
   overflow: hidden;
-  font-size: 5rem;
   text-align: center;
+  font-family: "Inspiration";
 }
 
+/*animacion en Inicio*/
 .frase {
   display: inline-block;
   animation: smoky both;
@@ -52,94 +59,54 @@ body {
     opacity: 0;
   }
 }
-/*MAIN DIRECTOR*/
-.margin-5 {
-  margin: 5%;
-}
-
-.padding-2 {
-  padding: 2%;
-}
-
-.justify-align {
-  text-align: justify;
-}
-
-/*MAIN PELICULAS*/
-.margin-carusel {
-  margin: 2% 5% 2% 5%;
-}
-
-.pelis {
-  margin-left: 10%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  width: 80%;
-  align-items: flex-start;
-}
-
-.estilo-card-titulo {
-  padding: 1%;
-}
-
-.estilo-card-pelis {
-  padding: 2%;
-}
-
-.imdb {
-  text-align: left;
-  margin-left: 15px;
-}
-
-/*MULTIMEDIA*/
-.sub_mult {
-  margin-left: 5%;
-  margin-right: 5%;
-  text-align: center;
-}
-
-.margin-cards-mult {
-  margin: 2% 10% 1% 10%;
-}
-
-.music {
-  margin: 5% 10% 1% 11%;
-  width: 90%;
-}
-
-.col {
-  margin-left: 9%;
-}
-
-/*CONTACTO*/
-.estilo_contacto {
-  margin: 5%;
-}
-
-.col-md-8 {
-  padding: 5% 3% 1% 3%;
-}
-
-body {
-  background-position: center center;
-  background-repeat: no-repeat;
+/*Fin de estilos de Inicio*/
+.body_director {
   background-size: cover;
-  background-attachment: fixed;
-  background-color: #363638;
+  background-repeat: no-repeat;
+  background-color: rgba(52, 52, 58, 0.4431372549);
+  background-image: url(../imagenes/grey.jpg);
 }
 
-/*EG HEADER*/
-.titulo {
-  color: whitesmoke;
-  text-shadow: 2px 2px 2px rgba(53, 52, 52, 0.836);
+/* Inicio estilos DIRECTOR*/
+.bio_tim {
+  margin: 5%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
-/*ANIMACIONES MAIN*/
-.is_frase {
-  color: whitesmoke;
+.texto_bio {
+  flex: 0 0 auto;
+  width: 100%;
+  text-align: justify;
+  font-size: 20px;
+  font-family: "Open Sans", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  padding: 5%;
+  color: rgb(189, 186, 186);
+  background-color: RGBA(33, 37, 41);
 }
 
-/*MAIN PELICULAS*/
+.imgagen-tim {
+  width: 100%;
+}
+
+@media screen and (max-width: 780px) {
+  .titulo_pagina h2 {
+    font-size: 35px;
+  }
+}
+/* Fin estilos DIRECTOR*/
+/*Inicio de estilos PELICULAS*/
+.body_peliculas {
+  background-size: 100vw;
+  background-color: rgba(52, 52, 58, 0.4431372549);
+  background-image: url(../imagenes/metales.jpg);
+}
+
+.margin-carusel {
+  margin: 2% 10% 5% 10%;
+}
+
 .estilo-card-subtitulo {
   color: rgb(201, 174, 115);
 }
@@ -154,54 +121,126 @@ body {
 
 .imdb {
   color: rgb(53, 51, 53);
+  text-align: left;
+  margin-left: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-/*CONTACTO*/
-.needs-validation {
-  color: whitesmoke;
+.pelis {
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 80%;
+  align-items: flex-start;
 }
 
-.estilo_contacto {
-  background-color: rgba(204, 200, 200, 0.137);
-}
-
-/*Estilos de fuentes*/
-header .navbar-brand {
-  font-family: "Cinzel", serif;
-  font-weight: 400;
-  font-size: 30px;
-}
-
-.titulo {
-  font-family: "Cinzel", serif;
-  font-size: 2rem;
-}
-
-/************* MAIN **************/
-/*INICIO*/
-.is_frase {
-  font-family: "Inspiration";
-}
-
-/*PELICULAS*/
 .estilo-card-titulo {
+  padding: 1%;
   font-family: "Cinzel", serif;
 }
 
 .estilo-card-pelis {
+  padding: 2%;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.imdb {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+@media screen and (max-width: 780px) {
+  .peliculas h2 {
+    font-size: 35px;
+  }
+}
+/*Fin de estilos PELICULAS*/
+/*Inicio de estilos de MULTIMEDIA*/
+.body_multimedia {
+  background-size: 100vw;
+  background-color: rgba(30, 30, 31, 0.9176470588);
+  background-image: url(../imagenes/metales.jpg);
 }
 
-/*MULTIMEDIA*/
-.estilo-card-subtitulo {
+.sub_mult {
+  margin-bottom: 3%;
+  text-align: center;
+  font-family: "Open Sans", "Lucida Sans", Arial, sans-serif;
+  font-size: 1.5rem;
+  color: lightgrey;
+}
+
+.multimedia_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 4fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+}
+.multimedia_grid .tarjeta_video {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.multimedia_grid .tarjeta_video .video {
+  width: 100%;
+  height: 450px;
+}
+.multimedia_grid .tarjeta_video .cuerpo_video {
+  background-color: rgba(158, 158, 158, 0.747);
+  padding: 15PX;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.multimedia_grid .tarjeta_video .cuerpo_video .titulo_video {
+  font-size: 25px;
   font-family: "Cinzel", serif;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  padding: 5PX;
+}
+.multimedia_grid .tarjeta_video .cuerpo_video .desc_video {
+  font-family: "Open Sans", "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
+  color: rgb(19, 14, 14);
+  padding: 5PX;
 }
 
-/*CONTACTO*/
+.music {
+  margin: 5%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 780px) {
+  .multimedia_grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  #multimedia h2 {
+    font-size: 35px;
+  }
+  #multimedia p {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .multimedia_grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 4fr);
+  }
+}
+/*Fin de estilos de MULTIMEDIA*/
+/*Inicio de Estilos de CONTACTO*/
+.body_contacto {
+  background-size: cover;
+  background-color: rgba(52, 52, 58, 0.4431372549);
+  background-image: url(../imagenes/fondo_contacto2.jpg);
+}
+
 .contactate {
   padding: 1%;
   font-family: "Cinzel", serif;
@@ -221,8 +260,148 @@ header .navbar-brand {
   font-family: "Cinzel", serif;
 }
 
+.estilo_contacto {
+  margin: 5%;
+}
+
+.col-md-8 {
+  padding: 5% 3% 1% 3%;
+}
+
+.needs-validation {
+  color: whitesmoke;
+}
+
+.estilo_contacto {
+  background-color: rgba(204, 200, 200, 0.137);
+}
+
+@media screen and (max-width: 780px) {
+  .contacto h2 {
+    font-size: 35px;
+  }
+}
+/*Fin de estilos de CONTACTO*/
+/*Inicio de estilos de FOOTER*/
+footer {
+  margin-top: 5%;
+}
+footer .redes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+  font-family: "Cinzel", serif;
+  border-top: #ffffff solid 1px;
+  border-bottom: #ffffff solid 1px;
+  margin-top: 2px;
+  padding-bottom: 2px;
+}
+footer .menu-footer {
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  word-spacing: 10px;
+}
+footer .menu-footer a {
+  color: darkgray;
+  font-family: "Cinzel", serif;
+  background-color: rgba(33, 35, 36, 0.87);
+  padding: 3px;
+}
+footer .social {
+  width: 200px;
+  display: flex;
+  padding: 4px;
+  border-radius: 10px;
+}
+footer .social i {
+  background-color: rgba(184, 178, 178, 0.3411764706);
+}
+footer .social > a {
+  width: 25%;
+  font-size: 2rem;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  background: rgba(184, 178, 178, 0.3411764706);
+  margin: 10px;
+  transition: 0.4s;
+}
+footer .social > a:hover {
+  transform: translateY(-10px);
+}
+
+@media screen and (max-width: 780px) {
+  footer h3 {
+    font-size: 16px;
+  }
+  footer a {
+    font-size: 10px;
+  }
+}
+/* Fin de estilos FOOTER */
+/* Inicio estilos media TEXTOS*/
+@media screen and (min-width: 650px) and (max-width: 1068px) {
+  header h1 {
+    font-size: 20spx;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  a {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1068px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  a {
+    font-size: 1.1rem;
+  }
+}
+/* Fin estilos media TEXTOS*/
 /*FUENTES*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /*ANIDACION*/
+nav .navbar-brand {
+  font-family: "Cinzel", serif;
+  font-weight: 400;
+  font-size: 30px;
+}
 nav ul {
   list-style: none;
 }
@@ -258,49 +437,35 @@ main .is_justify_center .contactate {
   padding: 1%;
 }
 
-footer {
-  margin: 8% 1% 1% 1%;
-  padding: 1%;
-}
-footer ul {
-  list-style: none;
-}
-footer ul li {
-  display: inline-flex;
-  padding: 15px;
-}
-footer ul li a {
-  font-size: 15px;
-  font-family: "Cinzel", serif;
-  color: darkgray;
-}
-
 /******* EXTEND TITULOS MAIN **************/
 .titulo-dir, .titulo-cont, .titulo-mult, .titulo-pel {
   font-family: "Cinzel", serif;
-  background-color: rgba(0, 0, 0, 0.555);
-  font-size: 30px;
-  color: rgb(170, 18, 18);
+  font-size: 50px;
+  color: rgb(255, 255, 255);
   text-align: center;
-  border-radius: 1px;
-  border: 1px solid rgb(48, 47, 47);
-  margin: 80px;
-  padding: 5px;
+  margin: 5%;
 }
 
 .titulo-pel {
-  background-color: rgba(100, 93, 93, 0.5);
-  color: rgb(85, 7, 52);
+  color: rgb(156, 98, 21);
+  margin: 2% 10% 2% 10%;
 }
 
 .titulo-mult {
-  background-color: rgba(105, 101, 101, 0.5);
   color: rgb(156, 98, 21);
+  margin: 2% 10% 2% 10%;
 }
 
 .titulo-cont {
-  background-color: rgba(105, 101, 101, 0.329);
-  color: rgb(31, 13, 126);
+  background-color: rgba(121, 118, 118, 0.274);
+  color: rgb(156, 98, 21);
+}
+
+/*MEDIA FONDO*/
+@media only screen and (max-width: 200px) {
+  body {
+    background-image: url(images/background-photo-mobile-devices.jpg);
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

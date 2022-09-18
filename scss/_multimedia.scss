@@ -1,0 +1,95 @@
+
+/*Inicio de estilos de MULTIMEDIA*/
+.body_multimedia {
+  background-size: 100vw;
+  background-color: #1e1e1fea;
+  background-image: url(../imagenes/metales.jpg);
+}
+
+.sub_mult {
+  margin-bottom: 3%;
+  text-align: center;
+  font-family:'Open Sans','Lucida Sans', Arial, sans-serif;
+  font-size: 1.5rem;
+  color: lightgrey;  
+}
+
+
+
+.multimedia_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 4fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  
+    
+  .tarjeta_video {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+
+    .video {
+      width: 100%;
+      height: 450px;
+    }
+    .cuerpo_video {
+      background-color: rgba(158, 158, 158, 0.747);
+      padding: 15PX;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+
+      .titulo_video {
+      font-size: 25px;
+      font-family: 'Cinzel', serif;
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+      padding: 5PX;
+      }
+      .desc_video {
+        font-family:'Open Sans','Lucida Sans', Arial, sans-serif;
+        font-size: 18px;
+        color: rgb(19, 14, 14);
+        padding: 5PX;
+      }
+    }   
+  }
+}
+
+.music {
+  margin: 5%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media screen and (max-width:780px){
+  .multimedia_grid {
+  grid-template-columns: 1fr;
+  width: 100%;
+  }
+  #multimedia {
+    h2 {
+    font-size: 35px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .multimedia_grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 4fr);
+  }
+}
+/*Fin de estilos de MULTIMEDIA*/  

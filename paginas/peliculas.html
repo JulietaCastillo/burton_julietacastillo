@@ -3,6 +3,7 @@
         
     <head>
         <title>Peliculas Tim Burton</title>
+        <link rel="icon" type="image/jpg" href="../imagenes/favicon-32.png">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
@@ -19,12 +20,12 @@
 
     </head>
 
-    <body>
-   
+    <body class="body_peliculas">
+<!-- Inicio de NAV-->   
       <header>
         <nav class="navbar navbar-dark bg-dark">
           <div class="container-fluid">
-            <a class="navbar-brand">TIM BURTON</a>
+            <h1 class="navbar-brand">TIM BURTON</h1>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -32,20 +33,22 @@
               <div class="navbar-nav">
                 <ul>
                     <li><a class="nav-link" href="../index.html">Home</a></li>
-                    <li><a class="nav-link" href="../paginas/director.html">Director</a></li>
-                    <li><a class="nav-link active" aria-current="page" href="../paginas/peliculas.html">Peliculas</a></li>
-                    <li><a class="nav-link" href="../paginas/multimedia.html">Multimedia</a></li>
-                    <li><a class="nav-link" href="../paginas/contacto.html">Contacto</a></li>
+                    <li><a class="nav-link" href="./director.html">Director</a></li>
+                    <li><a class="nav-link active" aria-current="page" href="./peliculas.html">Peliculas</a></li>
+                    <li><a class="nav-link" href="./multimedia.html">Multimedia</a></li>
+                    <li><a class="nav-link" href="./contacto.html">Contacto</a></li>
                 </ul>
               </div>
             </div>
           </div>
         </nav>
       </header>
-      
+<!-- Fin de NAV--> 
+
+<!-- Inicio de PELICULAS--> 
       <main> 
-        <div class="titulo-pel">
-          <h1 class="display-5">PELICULAS</h1>
+        <div class="peliculas">
+          <h2 class="titulo-pel">PELICULAS</h2>
         </div>
 
         <div id="carouselExampleIndicators" class="margin-carusel carousel slide" data-bs-ride="true">
@@ -56,13 +59,16 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="https://i.ytimg.com/vi/w4UF_uhtQJc/maxresdefault.jpg" class="d-block w-100" alt="COLLAGE DE PELICULAS">
+              <img src="../imagenes/joven.png" class="d-block w-100" alt="Tim filmando">
             </div>
             <div class="carousel-item">
-              <img src="https://tolucalabellacd.com/wp-content/uploads/2021/08/tim_burton.jpeg" class="d-block w-100" alt="PERSONAJES DE PELICULAS">
+              <img src="https://eselcine.com/wp-content/uploads/2016/10/Personajes-Pel%C3%ADculas-Tim-Burton.jpg" class="d-block w-100" alt="PERSONAJES DE PELICULAS">
             </div>
             <div class="carousel-item">
-              <img src="https://www.mubis.es/media/users/15357/172218/vuestras-tres-mejores-peliculas-de-burton-original.jpg" class="d-block w-100" alt="COLLAGE DE PELICULAS">
+              <img src="http://dalecine.com/wp-content/uploads/2022/06/tb.jpg" class="d-block w-100" alt="COLLAGE DE PELICULAS">
+            </div>
+            <div class="carousel-item">
+              <img src="https://offloadmedia.feverup.com/cdmxsecreta.com/wp-content/uploads/2022/08/18044528/filmoteca-1024x683.jpg" class="d-block w-100" alt="Personajes de peliculas">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -80,7 +86,7 @@
             <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" class="card">
               <img src="../imagenes/frankw.jpg" class="card-img-top" alt="imagen de Frankenweenie y el niño">
               <div class="card-body">
-                <h5 class="card-title estilo-card-titulo">FRANKENWEENIE</h5>
+                <h3 class="card-title estilo-card-titulo">FRANKENWEENIE</h3>
                 <p class="card-text justify-align estilo-card-pelis">Este cortometraje de Tim Burton está basado en la historia de un niño y su perro, el cual muere atropellado. El niño se pasa los días triste hasta que un día en la escuela realizan un experimento aplicándole cargas eléctricas a una rana muerta y logrando que se mueva, se le ocurre la idea de revivir a su perro al estilo de Frankenstein, y es así como da inicio la historia de Frankenweenie.</p>
                 <a class="imdb" href="https://www.imdb.com/title/tt0087291/">Puntuación en IMDB</a>
               </div>
@@ -91,7 +97,7 @@
             <div  data-aos="fade-down" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" class="card">
               <img src="../imagenes/peww.jpeg" class="card-img-top" alt="foto de Pee-wee">
               <div class="card-body">
-                <h5 class="card-title estilo-card-titulo">LA GRAN AVENTURA DE PEE-WEE</h5>
+                <h3 class="card-title estilo-card-titulo">LA GRAN AVENTURA DE PEE-WEE</h3>
                 <p class="card-text justify-align estilo-card-pelis">Pee-Wee es un tipo muy particular, con una mentalidad aún infantil, que dedica su vida a inventar cachibaches y a dar forma a cualquier idea que salga de su cabeza. Su más preciada invención es una bicicleta pintada de color rojo y blanco. El día que se la roban iniciará una búsqueda incansable. Pee-Wee recorrerá todo el país en su búsqueda y se encontrará con todo tipo de situaciones cómicas y surrealistas y esperpénticas.</p>
                 <a class="imdb" href="https://www.imdb.com/title/tt0089791/">Puntuación en IMDB</a>
               </div>
@@ -102,7 +108,7 @@
             <div data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"  class="card">
               <img src="../imagenes/beetlejuice.jpg" class="card-img-top" alt="foto de Bettlejuice">
               <div class="card-body">
-                <h5 class="card-title estilo-card-titulo">Bettlejuice</h5>
+                <h3 class="card-title estilo-card-titulo">Bettlejuice</h3>
                 <p class="card-text justify-align estilo-card-pelis">Barbara y Adam Maitland, una pareja felizmente casada, deciden arreglar y decorar su hermosa casa de campo en una zona tranquila de Connecticut. Cuando regresan de un viaje de la ciudad, tienen un accidente de carretera, donde su automóvil se hunde en un río. Cuando despiertan, Adam no puede recordar cómo llegaron a su casa, así que decide investigar en el exterior, sólo para descubrir que está en una zona desértica, misteriosa y peligrosa. En el interior, la pareja encuentra un extraño libro, titulado “Manual para personas recientemente fallecidas”, llegando a la conclusión de que no sobrevivieron al accidente. Tiempo después, su casa es vendida y una nueva familia ha llegado, con sus nuevas y extravagantes ideas para decorar y vivir en ella.</p>
                 <a class="imdb" href="https://www.imdb.com/title/tt0094721/?ref_=nv_sr_srsg_0">Puntuación en IMDB</a>
               </div>
@@ -113,7 +119,7 @@
             <div data-aos="fade-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" class="card">
               <img src="../imagenes/bat.png" class="card-img-top" alt="traje de batman">
               <div class="card-body">
-                <h5 class="card-title estilo-card-titulo">Batman y Batman Vuelve</h5>
+                <h3 class="card-title estilo-card-titulo">Batman y Batman Vuelve</h3>
                 <p class="card-text justify-align estilo-card-pelis">Basada en la novela gráfica de Frank Miller “The Dark Knight Returns”. Tim Burton dirije dos peliculas del vengador nocturno.<br> Batman sigue las aventuras de un misterioso luchador que combate el crimen. Bruce Wayne, traumatizado por el asesinato de sus padres cuando era niño, se disgusta al ver como Gotham se ha convertido en un lugar del pecado. Por este motivo, Wayne inventa el personaje de Batman, con el fin de infundir miedo en los corazones de los criminales. Al hacerlo gana varios enemigos, criminales dementes y peligrosos.<br>Interesante recreación con muy buena ambientación. Altamente comercial y muy entretenida.</p>
                 <a class="imdb" href="https://www.imdb.com/title/tt0096895/?ref_=nv_sr_srsg_5">Puntuación en IMDB</a>
               </div>
@@ -124,7 +130,7 @@
             <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" class="card">
               <img src="../imagenes/tijeras.jpg" class="card-img-top" alt="imagen del joven manos de tijeras">
               <div class="card-body">
-                <h5 class="card-title estilo-card-titulo">El Joven Manos de Tijeras</h5>
+                <h3 class="card-title estilo-card-titulo">El Joven Manos de Tijeras</h3>
                 <p class="card-text justify-align estilo-card-pelis">En un castillo, un inventor que ha terminado su más grande creación: Edward, un joven humano. Sin embargo, el inventor muere antes de terminar sus manos, dejándolo con unas tijeras metálicas como sustituto. Desde la muerte de su creador, Edward ha vivido sólo en el castillo hasta la llegada de una amable señora. Peg Boggs, quien se acerco al lugar vendiendo maquillaje, conmovida por la bondad y la soledad de Edward, decide llevárselo para vivir junto a ella y su familia. Los miembros de la familia lo aceptan, los vecinos empiezan a sentir curiosidad por el extraño joven, y pronto se convierte en una celebridad local al descubrir sus talentos. Pero las cosas se complican cuando Edward se enamora de Kim, hija mayor de Peg, quien sale con Jim, que buscará deshacerse de Edward.</p>
                 <a class="imdb" href="https://www.imdb.com/title/tt0099487/?ref_=nv_sr_srsg_0">Puntuación en IMDB</a>
               </div>
@@ -135,7 +141,7 @@
             <div data-aos="fade-down" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" class="card">
               <img src="../imagenes/marsattack.jpg" class="card-img-top" alt="imagen de marciones en mars attack">
               <div class="card-body">
-                <h5 class="card-title estilo-card-titulo">Mars Attack!</h5>
+                <h3 class="card-title estilo-card-titulo">Mars Attack!</h3>
                 <p class="card-text justify-align estilo-card-pelis">Durante un día normal de su mandato, el presidente de los Estados Unidos y su grupo del gabinete, descubren la presencia de varias naves sobrevolando la Tierra. Sin saber sus posibles intenciones, el presidente decide dar un comunicado global anunciando la presencia de seres extraterrestres. La humanidad recibe la noticia de diferentes maneras, algunos indiferentes, otros organizado campamentos para recibir a los visitantes, y quienes les temen se preparan para enfrentarlos. Pero todo cambia cuando el primer comité de bienvenida se transforma en catástrofe cuando los alienígenos atacan. Pronto descubren que estos seres no vienen con intenciones de paz y armonía, sino han llegado a colonizar la Tierra y hacerse de sus recursos.</p>
                 <a class="imdb" href="https://www.imdb.com/title/tt0116996/?ref_=nv_sr_srsg_0">Puntuación en IMDB</a>
               </div>
@@ -146,7 +152,7 @@
             <div data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" class="card">
               <img src="../imagenes/Jack2.jpg" class="card-img-top" alt="imagen del extraño mundo de jack">
               <div class="card-body">
-                <h5 class="card-title estilo-card-titulo">El extraño mundo de Jack</h5>
+                <h3 class="card-title estilo-card-titulo">El extraño mundo de Jack</h3>
                 <p class="card-text justify-align estilo-card-pelis">Tambien conocida como Pesadilla Antes de Navidad es una película realizada con la técnica de Stop Motion, y aunque Tim Burton no la dirigió se involucro mucho en ella, y se siente su impronta tan particular. La Película está Catalogada como Animación Musical, dirigida por Henry Selick y la producción de Tim Burton.<br>Cuenta la historia de Jack Skellington, el Señor de Halloween, quien aburrido de hacer cada año lo mismo, descubre la Ciudad de la Navidad y queda fascinado con la festividad, por lo que decide recrearla a su manera. Con este fin, secuestra a Santa Claus y crea una versión de la Navidad totalmente opuesta a la que existe. Sólo su amiga Sally es consciente del error que está cometiendo.</p>
                 <a class="imdb" href="https://www.imdb.com/title/tt0107688/">Puntuación en IMDB</a>
               </div>
@@ -157,7 +163,7 @@
             <div data-aos="fade-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" class="card">
               <img src="../imagenes/cadaver.jpg" class="card-img-top" alt="imagen de la pareja principal">
               <div class="card-body">
-                <h5 class="card-title estilo-card-titulo">El cadaver de la novia</h5>
+                <h3 class="card-title estilo-card-titulo">El cadaver de la novia</h3>
                 <p class="card-text justify-align estilo-card-pelis">En un pueblo a fines del siglo XIX, dos jóvenes se preparan para celebrar un matrimonio arreglado. Por una parte esta Victor, un joven virtuoso pero tímido, hijo de una prospera familia de pescadores; y por el otro esta Victoria, hija de unos aristócratas venidos a menos quienes, a pesar de no tener simpatía por Victor. A pesar de la ceremonia arreglada, la pareja se enamoran, pero en el ensayo de la boda el joven olvida los votos y causa un desastre. Apenado y molesto, camina hasta un bosque donde practica sus palabras para la boda y coloca el anillo en lo que parece ser una rama del suelo. Pronto, la rama cobra vida y una novia cadáver surge de la misma, aceptando el anillo y el matrimonio propuesto. Sin entender que sucede, Victor se adentra en el mundo de los muertos.</p>
                 <a class="imdb" href="https://www.imdb.com/title/tt0121164/">Puntuación en IMDB</a>
               </div>
@@ -168,7 +174,7 @@
             <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" class="card">
               <img src="../imagenes/chocolate.jpg" class="card-img-top" alt="escena de la pelicula">
               <div class="card-body">
-                <h5 class="card-title estilo-card-titulo">Charlie y la fábrica de chocolate</h5>
+                <h3 class="card-title estilo-card-titulo">Charlie y la fábrica de chocolate</h3>
                 <p class="card-text justify-align estilo-card-pelis">Charlie Bucket, un niño muy bueno de una familia muy pobre, gana un concurso para disfrutar de una visita de un día a la gigantesca fábrica de chocolate del excéntrico Willy Wonka (Johnny Depp) y su equipo de Oompa-Loompas. Cuatro niños más de diferentes partes del mundo lo acompañarán a través de un mundo fantástico y mágico lleno de diferentes sabores.</p>
                 <a class="imdb" href="https://www.imdb.com/title/tt0367594/?ref_=nv_sr_srsg_0">Puntuación en IMDB</a>
               </div>
@@ -179,30 +185,38 @@
             <div data-aos="fade-down" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" class="card">
               <img src="../imagenes/pocho.jpg" class="card-img-top" alt="Escena de pochoclos de la pelicula ">
               <div class="card-body">
-                <h5 class="card-title estilo-card-titulo">El gran pez</h5>
+                <h3 class="card-title estilo-card-titulo">El gran pez</h3>
                 <p class="card-text justify-align estilo-card-pelis">Edward Bloom ha llevado una vida repleta de historias sorprendentes que cuenta a su familia una y otra vez. De pequeño, su hijo William se mostraba muy entusiasmado por las anécdotas que le contaba su padre, en las que todo era posible. William sentía una gran admiración por su progenitor, pero con los años esta admiración se torna recelo y llega a desconfiar de todo lo que le había contado.</p>
                 <a class="imdb" href="https://www.imdb.com/title/tt0319061/">Puntuación en IMDB</a>
               </div>
             </div>
           </div>
-        </div>      
+        </div>
+             
       </main>
+<!-- Fin de PELICULAS-->
 
-        
-      <footer>
-        <section class="estilo_footer">
-            <div class="py-3 my-4">
-                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                    <li class="nav-item"><a href="../index.html" class="nav-link px-2 estilo_footer">Inicio</a></li>
-                    <li class="nav-item"><a href="../paginas/director.html" class="nav-link px-2 estilo_footer">Director</a></li>
-                    <li class="nav-item"><a href="../paginas/peliculas.html" class="nav-link px-2 estilo_footer">Peliculas</a></li>
-                    <li class="nav-item"><a href="../paginas/multimedia.html" class="nav-link px-2 estilo_footer">Multimedia</a></li>
-                    <li class="nav-item"><a href="../paginas/contacto.html" class="nav-link px-2 estilo_footer">Contacto</a></li>
-                </ul>
-                <p class="text-center text-muted">© 2022 Company, Inc</p>
-            </div>
-        </section>
-      </footer>
+
+<!-- Inicio de FOOTER --> 
+    <footer class="footer">
+      <div class="redes">
+          <h3> Redes sociales </h3>
+          <div class="social">
+              <a href="https://www.facebook.com/" target="_blank"><img src="../imagenes/facebook.png" alt="facebook"></a>
+              <a href="https://www.twitter.com/" target="_blank"> <img src="../imagenes/twitter.png" alt="twitter"></a>
+              <a href="https://www.instagram.com/" target="_blank"><img src="../imagenes/instagram.png" alt="instagram"></a>
+          </div>
+      </div>
+
+      <div class="menu-footer">
+          <a href="../index.html" class="text-decoration-none">Inicio</a>
+          <a href="./director.html" class="text-decoration-none">Director</a>
+          <a href="./peliculas.html" class="text-decoration-none">Peliculas</a>
+          <a href="./multimedia.html" class="text-decoration-none">Multimedia</a>
+          <a href="./contacto.html" class="text-decoration-none">Contacto</a>
+      </div>
+    </footer>
+<!-- Fin de FOOTER -->
             
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

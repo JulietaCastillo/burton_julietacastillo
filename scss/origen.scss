@@ -2,12 +2,13 @@
 
 /*IMPORT*/ 
 
-@import "variables";
-@import "reseteo";
-@import "responsive";
-@import "estructura";
-@import "colores";
-@import "tipografia";
+@import "inicio";
+@import "director";
+@import "peliculas";
+@import "multimedia";
+@import "contacto";
+@import "footer";
+@import "textos";
 
 /*FUENTES*/
 
@@ -17,8 +18,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500&display=swap');               
 
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /*ANIDACION*/
 nav {
+    .navbar-brand{
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    font-size: 30px;}
     ul {
         list-style: none;
             li {
@@ -28,7 +40,7 @@ nav {
                         text-decoration: none;
                         font-size: 15px;
                         font-family: 'Cinzel', serif;
-                        color: $gris-claro;
+                        color: whitesmoke;
                     }
             }
     }
@@ -55,59 +67,41 @@ main {
     }
 }
 
-
-footer {
-    margin: 8% 1% 1% 1%;
-    padding: 1%;
-        ul {
-            list-style: none;
-                li {
-                    display: inline-flex;
-                    padding: 15px;
-                        a { 
-                            font-size: 15px;
-                            font-family: 'Cinzel', serif;
-                            color: darkgray;
-                        }
-                }
-
-        }
-}
-
-
 /******* EXTEND TITULOS MAIN **************/
 .titulo-dir {
     font-family: 'Cinzel', serif;
-    background-color:rgba(0, 0, 0, 0.555);
-    font-size: 30px;
-    color: $rojo-oscuro;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
     text-align: center;
-    border-radius:1px;
-    border:1px solid rgb(48, 47, 47);
-    margin: 80px; 
-    padding: 5px;
+    margin: 5%;
+     
 }
 
 .titulo-pel {
     @extend .titulo-dir;
-    background-color:rgba(100, 93, 93, 0.5);
-    color:rgb(85, 7, 52)
+    color:rgb(156, 98, 21);
+    margin: 2% 10% 2% 10%;
 }
 
 .titulo-mult {
     @extend .titulo-dir;
-    background-color:rgba(105, 101, 101, 0.5);
-    color:rgb(156, 98, 21)
+    color:rgb(156, 98, 21);
+    margin: 2% 10% 2% 10%;
+
 }
 
 .titulo-cont {
     @extend .titulo-dir;
-    background-color:rgba(105, 101, 101, 0.329);
-    color:rgb(31, 13, 126)
+    background-color:rgba(121, 118, 118, 0.274);
+    color:rgb(156, 98, 21);
 }
 
 
-
+/*MEDIA FONDO*/
+@media only screen and (max-width: 200px) {
+    body {
+      background-image: url(images/background-photo-mobile-devices.jpg);} 
+  }
 
 
 

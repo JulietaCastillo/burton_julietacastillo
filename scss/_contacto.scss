@@ -1,0 +1,53 @@
+
+/*Inicio de Estilos de CONTACTO*/
+.body_contacto {
+    background-size: cover;
+    background-color: #34343a71;
+    background-image: url(../imagenes/fondo_contacto2.jpg);  
+}
+
+.contactate {
+    padding: 1%;
+    font-family: 'Cinzel', serif;
+}
+
+.estilo_contacto{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+}
+
+.estilo_footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.needs-validation {
+    padding: 1%;
+    font-family: 'Cinzel', serif;
+}
+
+.estilo_contacto {
+margin: 5%;
+}
+
+.col-md-8 {
+padding: 5% 3% 1% 3%;
+}
+
+
+.needs-validation {
+    color: whitesmoke;
+}
+.estilo_contacto {
+    background-color: rgba(204, 200, 200, 0.137);
+}
+
+
+@media screen and (max-width:780px){
+    .contacto {
+      h2 {
+      font-size: 35px;
+      }
+    }
+}
+/*Fin de estilos de CONTACTO*/

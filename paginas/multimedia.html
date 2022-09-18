@@ -3,6 +3,7 @@
 
   <head>
       <title>Multimedia Tim Burton</title>
+      <link rel="icon" type="image/jpg" href="../imagenes/favicon-32.png">
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,12 +19,12 @@
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
-  <body>
-
+  <body class="body_multimedia">
+<!-- Inicio de NAV-->    
     <header>
       <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand">TIM BURTON</a>
+          <h1 class="navbar-brand">TIM BURTON</h1>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
@@ -31,134 +32,125 @@
             <div class="navbar-nav">
               <ul>
                   <li><a class="nav-link" href="../index.html">Home</a></li>
-                  <li><a class="nav-link" href="../paginas/director.html">Director</a></li>
-                  <li><a class="nav-link" href="../paginas/peliculas.html">Peliculas</a></li>
-                  <li><a class="nav-link active" aria-current="page" href="../paginas/multimedia.html">Multimedia</a></li>
-                  <li><a class="nav-link" href="../paginas/contacto.html">Contacto</a></li>
+                  <li><a class="nav-link" href="./director.html">Director</a></li>
+                  <li><a class="nav-link" href="./peliculas.html">Peliculas</a></li>
+                  <li><a class="nav-link active" aria-current="page" href="./multimedia.html">Multimedia</a></li>
+                  <li><a class="nav-link" href="./contacto.html">Contacto</a></li>
               </ul>
             </div>
           </div>
         </div>
       </nav>
     </header>
-
+<!-- Fin de NAV-->        
+        
+<!-- Inicio de MULTIMEDIA-->
     <main>
-      <div class="titulo-mult">
-        <h1 class="display-5">MULTIMEDIA</h1>
-      </div>
-      <div class="estilo-card-subtitulo is_justify_center">
-        <p class="sub_mult display-6 lead">Trailers, escenas y música iconica de la filmografia de Tim Burton</p>
-      </div>            
-       
+      <div id="multimedia">
+        <h2 class="titulo-mult">MULTIMEDIA</h2>
+        <div class="sub_mult">
+        <p>Trailers, escenas y música iconica de la filmografia de Tim Burton</p>
+        </div>            
+      </div> 
 
-      <div class="margin-cards-mult row row-cols-md-3 g-4">
-        <div class="col">
-          <div data-aos="flip-left" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" class="card">
-              <iframe height="315" src="https://www.youtube.com/embed/DqtjHWlM4lQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="card-body">
-              <h5 class="card-title">Pelicula: Mars Attack!</h5>
-              <p class="card-text">Trailer de la pelicula</p>
-            </div>
+      <section class="multimedia_grid">
+        <div class="tarjeta_video">
+          <iframe class="video"src="https://www.youtube.com/embed/DqtjHWlM4lQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="cuerpo_video">
+            <h3 class="titulo_video">Pelicula: Mars Attack!</h3>
+            <p class="desc_video">Trailer de la pelicula</p>
           </div>
         </div>
-
-        <div class="col">
-          <div data-aos="flip-left" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" class="card">
-              <iframe height="315" src="https://www.youtube.com/embed/zu-qG057rbM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="card-body">
-              <h5 class="card-title">Pelicula: Alicia en el pais de las maravillas</h5>
-              <p class="card-text">Trailer de la pelicula</p>
-            </div>
+      
+        <div class="tarjeta_video">
+          <iframe class="video" src="https://www.youtube.com/embed/zu-qG057rbM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="cuerpo_video">
+            <h3 class="titulo_video">Pelicula: Alicia en el pais de las maravillas</h3>
+            <p class="desc_video">Trailer de la pelicula</p>
           </div>
         </div>
-
-        <div class="col">
-          <div data-aos="flip-left" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" class="card">
-              <iframe height="315" src="https://www.youtube.com/embed/DvnxaH3FgBE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="card-body">
-              <h5 class="card-title">Pelicula: El cadaver de la novia</h5>
-              <p class="card-text">Cancion "Una lágrima mas que dar"</p>
-          </div>
-          </div>
+      
+        <div class="tarjeta_video">
+          <iframe class="video" src="https://www.youtube.com/embed/DvnxaH3FgBE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="cuerpo_video">
+            <h3 class="titulo_video">Pelicula: El cadaver de la novia</h3>
+            <p class="desc_video">Cancion "Una lágrima mas que dar"</p>
         </div>
-
-        <div class="col">
-            <div data-aos="flip-left" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" class="card">
-                <iframe height="315" src="https://www.youtube.com/embed/29vIJQohUWE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="card-body">
-                <h5 class="card-title">Pelicula: Frankenweenie</h5>
-                <p class="card-text">Trailer de la pelicula</p>
-            </div>
-            </div>
+        </div>
+      
+        <div class="tarjeta_video">
+          <iframe class="video" src="https://www.youtube.com/embed/29vIJQohUWE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="cuerpo_video">
+              <h3 class="titulo_video">Pelicula: Frankenweenie</h3>
+              <p class="desc_video">Trailer de la pelicula</p>
+          </div>
         </div>
         
-        <div class="col">
-          <div data-aos="flip-left" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" class="card">
-                <iframe height="315" src="https://www.youtube.com/embed/fGKgv5TgNIs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="card-body">
-                <h5 class="card-title">Pelicula: Pesadilla antes de Navidad</h5>
-                <p class="card-text">Cancion "Esto es Halloween". Pelicula producida por Tim Burton.</p>
+        <div class="tarjeta_video">
+          <iframe class="video" src="https://www.youtube.com/embed/fGKgv5TgNIs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="cuerpo_video">
+              <h3 class="titulo_video">Pelicula: Pesadilla antes de Navidad</h3>
+              <p class="desc_video">Cancion "Esto es Halloween". Pelicula producida por Tim Burton.</p>
+          </div>
+        </div>
+      
+        <div class="tarjeta_video">
+            <iframe class="video" src="https://www.youtube.com/embed/TLUyI-akjP4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="cuerpo_video">
+              <h3 class="titulo_video">Pelicula: El jinete sin cabeza</h3>
+              <p class="desc_video">Trailer de la pelicula</p>
             </div>
-          </div>
         </div>
-
-        <div class="col">
-          <div data-aos="flip-left" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" class="card">
-              <iframe height="315" src="https://www.youtube.com/embed/TLUyI-akjP4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <div class="card-body">
-              <h5 class="card-title">Pelicula: El jinete sin cabeza</h5>
-              <p class="card-text">Trailer de la pelicula</p>
-              </div>
-          </div>
+            
+        <div class="tarjeta_video">
+            <iframe class="video" src="https://www.youtube.com/embed/z5REDFBLVN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="cuerpo_video">
+            <h3 class="titulo_video">Pelicula: El gran Pez</h3>
+            <p class="desc_video">Trailer de la pelicula</p>
+            </div>
         </div>
-          
-        <div class="col">
-          <div data-aos="flip-left" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" class="card">
-              <iframe height="315" src="https://www.youtube.com/embed/z5REDFBLVN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <div class="card-body">
-              <h5 class="card-title">Pelicula: El gran Pez</h5>
-              <p class="card-text">Trailer de la pelicula</p>
-              </div>
-          </div>
+      
+        <div class="tarjeta_video">
+            <iframe class="video" src="https://www.youtube.com/embed/8txDV2tYtJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="cuerpo_video">
+            <h3 class="titulo_video">Pelicula: Batman Returns</h3>
+            <p class="desc_video">Trailer de la pelicula</p>
+            </div>
         </div>
-
-        <div class="col">
-          <div data-aos="flip-left" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" class="card">
-              <iframe height="315" src="https://www.youtube.com/embed/8txDV2tYtJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <div class="card-body">
-              <h5 class="card-title">Pelicula: Batman Returns</h5>
-              <p class="card-text">Trailer de la pelicula</p>
-              </div>
-          </div>
-        </div>
+      </section>
         
         <div class="music">
           <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3izAnzA3jB2c1xG1x9jjDc?utm_source=generator&theme=0" width="80%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
         </div>
     </main>
-    
+<!-- Fin de MULTIMEDIA-->   
 
-    <footer>
-      <section class="estilo_footer">
-          <div class="py-3 my-4">
-              <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                  <li class="nav-item"><a href="../index.html" class="nav-link px-2 estilo_footer">Inicio</a></li>
-                  <li class="nav-item"><a href="../paginas/director.html" class="nav-link px-2 estilo_footer">Director</a></li>
-                  <li class="nav-item"><a href="../paginas/peliculas.html" class="nav-link px-2 estilo_footer">Peliculas</a></li>
-                  <li class="nav-item"><a href="../paginas/multimedia.html" class="nav-link px-2 estilo_footer">Multimedia</a></li>
-                  <li class="nav-item"><a href="../paginas/contacto.html" class="nav-link px-2 estilo_footer">Contacto</a></li>
-              </ul>
-              <p class="text-center text-muted">© 2022 Company, Inc</p>
-          </div>
-      </section>
+<!-- Inicio de FOOTER-->
+    <footer class="footer">
+      <div class="redes">
+          <h3> Redes sociales </h3>
+          <div class="social">
+            <a href="https://www.facebook.com/" target="_blank"><img src="../imagenes/facebook.png" alt="facebook"></a>
+            <a href="https://www.twitter.com/" target="_blank"> <img src="../imagenes/twitter.png" alt="twitter"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../imagenes/instagram.png" alt="instagram"></a>
+        </div>
+      </div>
+
+      <div class="menu-footer">
+          <a href="../index.html" class="">Inicio</a>
+          <a href="./director.html" class="">Director</a>
+          <a href="./peliculas.html" class="">Peliculas</a>
+          <a href="./multimedia.html" class="">Multimedia</a>
+          <a href="./contacto.html" class="">Contacto</a>
+      </div>
     </footer>
-            
+<!-- Fin de FOOTER-->  
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>        
   
-
   </body>
 
 <!-- JavaScript Bundle with Popper -->

@@ -1,0 +1,42 @@
+
+.body_director {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #34343a71;
+    background-image: url(../imagenes/grey.jpg);  
+}
+
+/* Inicio estilos DIRECTOR*/
+
+.bio_tim {
+  margin: 5%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.texto_bio {
+  flex: 0 0 auto;
+  width: 100%;
+  text-align: justify;
+  font-size: 20px;
+  font-family: 'Open Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 5%;
+  color: rgb(189, 186, 186);
+  background-color: RGBA(33, 37, 41);
+}
+
+.imgagen-tim {
+  width: 100%;
+}
+
+
+@media screen and (max-width:780px){
+  .titulo_pagina {
+    h2 {
+    font-size: 35px;
+    }
+  }
+}
+
+/* Fin estilos DIRECTOR*/

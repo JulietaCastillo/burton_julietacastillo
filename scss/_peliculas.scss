@@ -1,0 +1,58 @@
+
+/*Inicio de estilos PELICULAS*/
+.body_peliculas {
+    background-size: 100vw;
+    background-color: #34343a71;
+    background-image: url(../imagenes/metales.jpg);  
+}
+
+.margin-carusel {
+    margin: 2% 10% 5% 10%;
+}
+
+.estilo-card-subtitulo{
+    color: rgb(201, 174, 115);
+}
+
+.estilo_footer {
+    color: azure;
+}
+
+.container-fluid {
+    color: #363638;
+}
+
+.imdb {
+    color: rgb(53, 51, 53);
+    text-align: left;
+    margin-left: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.pelis {
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 80%;
+  align-items: flex-start;
+}
+
+.estilo-card-titulo{
+    padding: 1%;
+    font-family: 'Cinzel', serif;
+}
+.estilo-card-pelis{
+    padding: 2%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+@media screen and (max-width:780px){
+    .peliculas {
+      h2 {
+      font-size: 35px;
+      }
+    }
+}
+/*Fin de estilos PELICULAS*/
+

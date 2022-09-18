@@ -1,0 +1,75 @@
+/*Inicio de estilos de FOOTER*/
+
+footer {
+    margin-top: 5%;
+    
+    .redes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #ffffff;
+        font-family: "Cinzel", serif;
+        border-top: #ffffff  solid 1px;
+        border-bottom: #ffffff solid 1px;
+        margin-top: 2px;
+        padding-bottom: 2px; 
+    }
+    
+    .menu-footer {
+        a{
+            color: darkgray;
+            font-family: "Cinzel", serif;
+            background-color: rgba(33, 35, 36, 0.87);
+            padding: 3px;
+        }
+        text-align: center;
+        margin-top: 1%;
+        margin-bottom: 2%;
+        word-spacing: 10px; 
+    }
+  
+    .social {
+        width: 200px;
+        display: flex;
+        padding: 4px;
+        border-radius: 10px;
+    }
+
+    .social i {
+        background-color:#b8b2b257; 
+    }
+
+    .social > a {
+        width: 25%;
+        font-size: 2rem;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        text-decoration: none;
+        border-radius: 5px;
+        background: #b8b2b257;
+        margin: 10px;
+        transition: 0.4s; 
+    }
+
+    .social > a:hover {
+        transform: translateY(-10px);
+    }
+}
+
+@media screen and (max-width:780px){
+    footer {
+        h3 {
+        font-size: 16px;
+        }
+        a {
+        font-size: 10px;
+        }
+    }
+}
+
+/* Fin de estilos FOOTER */

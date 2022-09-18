@@ -1,0 +1,62 @@
+
+.fondo_index {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    background-color: #363638;
+    height: auto;
+    background-image: url(../imagenes/bosque.jpg);
+}
+
+/*Estilos de Inicio*/
+.fondo_index {
+    background-image: url(../imagenes/bosque.jpg);
+  }
+  
+.titulo {
+    color: goldenrod;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(53, 52, 52, 0.836);
+    font-family: 'Cinzel', serif;
+    margin-top: 18%;
+    margin-bottom: 5%;
+}
+
+.is_frase {
+    color: whitesmoke;
+    padding-top: 10%;
+    margin-bottom: 30%;
+    overflow: hidden;
+    text-align: center;
+    font-family:'Inspiration';
+}
+
+/*animacion en Inicio*/
+
+.frase {
+    display: inline-block;
+    animation: smoky both;
+    animation-duration: 2s;
+    animation-delay: 3s;
+}
+
+.frase:nth-child(even){
+    animation-name: smoky;
+}
+
+@keyframes smoky {
+    60% {
+    text-shadow: 0 0 40px rgba(245, 245, 245, 0);
+    }
+    to {
+    transform:
+        translate3d(1rem,-1rem,0)
+        skewX(30deg)
+        scale(1);
+    text-shadow: 0 0 20px rgba(245, 245, 245, 0);
+    opacity: 0;
+    }
+}
+
+/*Fin de estilos de Inicio*/
